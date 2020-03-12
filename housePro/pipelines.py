@@ -18,8 +18,7 @@ class beikePipeline(object):
     cursor = None
 
     def open_spider(self, spider):
-        self.conn = pymysql.connect(host='localhost',port=3306,db='jobdata',
-                                    user='root',password='9801250030')
+        self.conn = pymysql.connect(host='localhost',port=3306,db='jobdata',user='root',password='')
         print(self.conn)
     def process_item(self, item, spider):
 
